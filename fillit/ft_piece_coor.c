@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_linepassed(char *piece, int coor)
+#include "ft_fillit.h"
+
+static	int	ft_linepassed(char *piece, int coor)
 {
 	int	passed;
 	int	pos;
@@ -28,7 +30,7 @@ int	ft_linepassed(char *piece, int coor)
 	return (passed);
 }
 
-int	*ft_get_coor(char *piece)
+static	int	*ft_get_coor(char *piece)
 {
 	int	pos;
 	int	*coor;
@@ -56,7 +58,7 @@ int	*ft_get_coor(char *piece)
 	return (coor);
 }
 
-int	ft_pieceslen(char **pieces)
+static	int	ft_pieceslen(char **pieces)
 {
 	int	nb;
 
@@ -66,7 +68,7 @@ int	ft_pieceslen(char **pieces)
 	return (nb);
 }
 
-int	**ft_piece_coor(char **pieces)
+int		**ft_piece_coor(char **pieces)
 {
 	int	**pieces_coor;
 	int	nb_pieces;

@@ -10,18 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_fillit.h"
+
 int	main(int ac, char **av)
 {
-	//int		**tetrotab;
+	int		**tetrotab;
 	char	*set;
+	char	**tetros;
 
 	set = ft_getstr(av[ac - 1]);
 	if(!ft_check_all(set))
 		return (0);
-	if (!ft_pieces(set))
+	if (!(tetros = !ft_pieces(set))
 		return (0);
-	/*tetrotab = ft_get_pieces(set);
-	return (0);*/
-	printf("OK");
-	return (0);
+	if (!(tetrotab = ft_pieces_coor(tetros));
+		return (0);
+	return (ft_fillgrid(tetrotab));
 }

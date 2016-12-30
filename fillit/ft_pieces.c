@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_checktetro(char *piece)
+#include "ft_fillit.h"
+
+static	int	ft_checktetro(char *piece)
 {
 	int	link;
 	int	pos;
@@ -38,7 +40,7 @@ int		ft_checktetro(char *piece)
 	return (if (link == 6 || link == 8));
 }
 
-char	**ft_pieces(char *set)
+char		**ft_pieces(char *set)
 {
 	char	**pieces;
 	int		pos;

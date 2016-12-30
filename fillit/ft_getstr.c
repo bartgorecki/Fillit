@@ -14,6 +14,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdio.h>
+#include "ft_fillit.h"
 
 char	*ft_getstr(char *filename)
 {

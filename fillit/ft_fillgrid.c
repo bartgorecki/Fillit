@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_min_size(pieces_coor)
+#include "ft_fillih.h"
+
+static	int	ft_min_size(pieces_coor)
 {
 	int	size;
 	int	nb_pieces;
@@ -24,7 +26,7 @@ int		ft_min_size(pieces_coor)
 	return (size);
 }
 
-char	*ft_fill(char *grid, int **pieces_coor, char *instruction)
+static	char	*ft_fill(char *grid, int **pieces_coor, char *instruction)
 {
 	if (pieces_coor)
 	{
@@ -48,7 +50,7 @@ char	*ft_fill(char *grid, int **pieces_coor, char *instruction)
 	return (grid);
 }
 
-char	*ft_fillgrid(int **pieces_coor)
+char		*ft_fillgrid(int **pieces_coor)
 {
 	char	*grid;
 	int		size;
